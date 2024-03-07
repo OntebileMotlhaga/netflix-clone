@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    
+}
+body{
+    font-family: Roboto, sans-serif;
+}
+/* the banner wrap */
+.banner-wrap{
+    background-image: url(./assests/bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    border-bottom: 8px solid #222;
+   
+}
+.overlay {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    opacity: 60%;
+}
+.navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 10%;
+    margin: 0 45px;
+    padding-top: 45px;
+
+}
+.navbar svg{
+    height: 32px;
+
+}
+.sign-in-button{
+    color: white;
+    padding: 7px 17px;
+    background-color: red;
+    border: none;
+    font-weight: 700;
+    border-radius: 4px;
+    text-decoration: none;
+
+    
+}
+.banner-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+color: white; 
+height: 90%;
+margin-top: 220px;
+
+}
+.banner-container h1{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-size-adjust: 100%;
+    font-display: block;
+    margin-bottom: 12px;
+}
+.banner-container h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.banner-container h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    
+}
+.banner-container button{
+    background-color: red;
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+    color: white; 
+    padding: 20px 45px 20px 45px   
+}
+.banner-container input{
+    padding: 20px 105px 20px 125px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 2px;
+    opacity: 0.5;
+}
+/* the main */
+.info-container {
+    border-bottom: 8px solid #222;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 75px 45px;
+    height: 100vh;
+    
+
+}
+.info h2{
+    margin-top: 70px ;
+    color: white;
+    font-size: 3rem;
+}
+.info p{
+    color: white;
+    font-size: 1.35rem;
+    flex-direction: column;
+}
+.tv-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 35px;
+    margin-left: 300px;
+    
+}
+.tv-container img{
+    z-index: 1; 
+    position: absolute;
+    padding-left: 20px;
+}
+.tv-container video{
+    position: absolute;
+}
+/* this is footer */
+.footer{
+    height: 100vh;
+    background-color: black;
+
+}
+.footer-items{
+    margin: 0 15px;
+    padding: 85px 45px;
+    
+}
+.footer-top{
+    margin-top: 30px;
+}
+.footer ul li{
+    color: #757575;
+    text-decoration: underline;
+}
+.footer ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-links{
+    list-style: none;
+    columns: 4;
+    line-height: 2;
+    margin-left: 20px;
+    
+}
+.footer-links li{
+    font-size: 13px;
+
+}
+.footer ul li, .questions-title{
+    color: #757575;
+}
+.questions-title{
+    font-size: 13px;
+}
+.language {
+    height: 53px;
+    width: 142px;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #999999;
+    padding: 0 2px;
+    margin-top: 30px;
+    margin-left: 60px;
+    border-radius: 5px;
+}
+.language select{
+    border: none;
+    margin-left: 10px;
+    color: #999999;
+}
